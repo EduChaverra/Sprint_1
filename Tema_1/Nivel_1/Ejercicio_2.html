@@ -1,0 +1,188 @@
+<html>
+
+<div class="contenedor">
+    <div id="Seccion1" class="secciones">
+        <div id="caja1">
+            <div>
+                .logo
+            </div>
+            <div>
+                .nav
+            </div>
+            <div>
+                .social
+            </div>
+
+
+        </div>
+        <div id="caja2">
+            <div>
+                <h1>.banner</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Seccion2" class="secciones">
+        <div id="caja3">
+            <div class="articulo alturaCajasConTexto">.articulo</div>
+            <div class="articulo alturaCajasConTexto">.articulo</div>
+            <div class="articulo alturaCajasConTexto">.articulo</div>
+            <div class="articulo alturaCajasConTexto">.articulo</div>
+            <div class="navegacion alturaCajasConTexto">.navegacion</div>
+            
+        </div>
+        <div id="caja4">
+            <div class="alturaCajasConTexto">
+                .publicidad
+            </div>
+            <div class="alturaCajasConTexto">
+                .publicidad
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="Seccion3" class="secciones">
+        <div id="caja5">
+            .pie
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <style>
+        .contenedor{
+            max-width: 1200px;
+            width: auto;
+            gap: 24px;
+            display:flex; 
+            flex-direction:column;
+        }
+
+        .secciones{
+            background-color: black;
+        }
+
+        #seccion1{
+            display: grid;
+            grid-template-rows: 4fr 5fr;
+            padding: 24px;
+            gap: 24px;
+            min-height: 300px;
+        }
+
+        #caja1{
+            display: grid;
+            background-color: darkslategrey;
+            grid-template-columns: auto 50% auto;
+            padding: 24px;
+            gap: 24px;
+
+            div {
+                background-color: rgb(196, 76, 76);
+                align-content: center;
+            }
+        }
+
+        #caja2{
+            background-color: rgb(241, 161, 13);
+            display: grid;
+            padding: 24px;
+            
+            div {
+                background-color: rgb(255, 247, 0);
+                align-content: center;
+            }
+        }
+
+        #seccion2{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            padding: 24px;
+            gap: 24px;
+            min-height: 300px;
+            
+        }
+
+        #caja3{
+            display: grid;
+            background-color: rgb(224, 223, 209);
+            gap: 24px;
+            padding: 24px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+               "articulo articulo"
+               "articulo articulo"
+               "navegacion navegacion";
+        }
+
+        .articulo{
+            background-color: blue;
+            align-content: center;
+        }
+
+        .navegacion{
+            background-color: rgb(26, 131, 137);
+            grid-area: navegacion;
+            align-content: center;
+        }
+
+        #caja4{
+            background-color: rgb(233, 45, 45);
+            display: grid;
+            padding: 24px 24px 120px 24px;
+            row-gap: 12px;
+            grid-template-rows: 1fr 1fr;
+            div {
+                background-color: rgb(255, 247, 0);
+                align-content: center;
+            }
+        }
+
+        #seccion3{
+            display: grid;
+            padding: 24px;
+            min-height: 70px;
+        }
+
+        #caja5{
+            background-color: rgb(245, 234, 133);
+            align-content: center;
+        }
+
+        .alturaCajasConTexto{
+            min-height: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contenedor{
+            width: auto;
+        }
+            #caja1{
+            display: flex;
+            flex-direction: column;
+            div{
+                min-height: 40px;
+            }
+        }
+        #seccion2{
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+        }
+        #caja4{
+            padding: 24px;
+        }
+
+    }
+
+    </style>
+</html>
