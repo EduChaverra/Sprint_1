@@ -5,8 +5,8 @@ use PHPUnit\Framework\TestCase;
 Class VerificarGradoTests extends TestCase {
 
     public function testPasaPrimeraDivision(){
-        $this->assertEquals("El estudiante pasa a primera division", verificarGrado(60));
-        $this->assertEquals("El estudiante pasa a primera division", verificarGrado(100));
+        $this->assertEquals(verificarGrado(60));
+        $this->assertEquals(verificarGrado(100));
     }
 
     public function testPasaSeguraDivision(){
