@@ -13,6 +13,4 @@ function verificarGrado($nota){
     }
 }
 
-echo verificar_grado(90);
-
 ?>
