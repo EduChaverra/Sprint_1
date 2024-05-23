@@ -1,8 +1,6 @@
 <?php
-$duracionMinutos = 0;
-$minutoAdicional = 0;
 
-function calcularPagoLlamada($duracionMinutos) {
+function calcularPagoLlamada(int $duracionMinutos) {
     if ($duracionMinutos < 3){
         return 10; 
     } else {
