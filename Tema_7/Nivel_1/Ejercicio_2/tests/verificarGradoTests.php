@@ -12,7 +12,7 @@ Class VerificarGradoTests extends TestCase {
     public function testPasaSeguraDivision(){
         $this->assertEquals("El estudiante pasa a segunda division", verificarGrado(45));
         $this->assertEquals("El estudiante pasa a segunda division", verificarGrado(59));
-        $this->assertEquals("El estudiante pasa a segunda division", verificarGrado(53));
+        $this->assertEquals("El estudiante pasa a segunda division", verificarGrado(0));
     }
 
     public function testPasaTerceraDivision(){
