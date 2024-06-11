@@ -2,6 +2,7 @@
 require ("Cinema.php");
 require ("Pelicula.php");
 
+
 $cinema1 = new Cinema ("Aribau", "Barcelona");
 $cinema1->addPelicula("El caso Goldman",116,"Cedric Kahn");
 $cinema1->addPelicula("Las ocho montañas",142,"Felix van Groeningen");
