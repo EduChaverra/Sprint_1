@@ -18,7 +18,7 @@ $cinema1->addPelicula("El regreso de las golondrinas",134,"Li Ruijun");
 $cinema1->addPelicula("Josep",74,"Aurel");
 $cinema1->addPelicula("El Agente Topo",90,"Maite Alberdi");
 
-$cinemas = array ($cinema1, $cinema2, $cinema3);
+$cinemas = [$cinema1, $cinema2, $cinema3];
 
 
 

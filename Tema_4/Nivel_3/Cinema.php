@@ -22,11 +22,11 @@ class Cinema {
         $duracion = null;
 
         foreach($this->peliculas as $pelicula){
-            if ($duracion == null || $pelicula->duracion > $duracionr->duracion) {
+            if ($duracion == null || $pelicula->duracion > $duracion->duracion) {
                 $duracion = $pelicula;
             }
         }
-        return $mayor;   
+        return $pelicula;   
     }
 
     public static function buscarPeliculasPorDirector($cinemas, $nombreDirector) {
